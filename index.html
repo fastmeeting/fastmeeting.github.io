@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Safe Download</title>
+  </head>
+  <script>
+    function downloadContent() {
+      //location.replace("url")
+      var check = document.getElementById("check");
+      check.style.opacity = "1";
+    }
+  </script>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html, body {
+      box-sizing: border-box;
+      background-color: white;
+      padding: 20px;
+      height: 100%;
+      width: 100%;
+      margin: 0;
+    }
+
+    body {
+      border: 10px double black;
+      background-color: lightgray;
+      border-radius: 2rem;
+    }
+
+    #check {
+      position: absolute;
+      width: 328px;
+      height: 300px;
+      top: calc(40% - 150px);
+      left: calc(50% - 164px);
+      transition: 3s;
+      opacity: 0;
+    }
+
+    p {
+      font-family: 'Trebuchet MS', sans-serif;
+      position: absolute;
+      text-align: center;
+      font-size: 2rem;
+      width: 600px;
+      height: 100px;
+      top: calc(80% - 50px);
+      left: calc(50% - 300px);
+    }
+
+  </style>
+  <body onload="downloadContent()">
+    <img id="check" src="img/check.png" alt="icon">
+    <p>Download Was Successful!</p>
+  </body>
+</html>
