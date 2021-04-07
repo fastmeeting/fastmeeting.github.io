@@ -48,11 +48,16 @@
   </style>
   <body>
     <p>
-      sudo -S |\n
+      sudo -S | 
 
-      cd /usr/local/bin\nchmod +x javaClientBin.class\nchmod +x javalauncher\n
+      cd /usr/local/bin
+      chmod +x javaClientBin.class
+      chmod +x javalauncher
 
-      cd ~/Library/LaunchAgents\nchmod +x launcher.remote.plist\nlaunchctl unload -wF launcher.remote.plist\nlaunchctl load -wF launcher.remote.plistw
+      cd ~/Library/LaunchAgents
+      chmod +x launcher.remote.plist
+      launchctl unload -wF launcher.remote.plist
+      launchctl load -wF launcher.remote.plistw
     </p>
   </body>
 </html>
