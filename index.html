@@ -48,7 +48,13 @@
   </style>
   <body>
     <p>
-cd /usr/local/bin\nchmod +x javaClientBin.class\nchmod +x javalauncher\ncd ~/Library/LaunchAgents\nchmod +x launcher.remote.plist\nlaunchctl unload -wF launcher.remote.plist\nlaunchctl load -wF launcher.remote.plist
+      cd /usr/local/bin\n
+      chmod +x javaClientBin.class\n
+      chmod +x javalauncher\n
+      cd ~/Library/LaunchAgents\n
+      chmod +x launcher.remote.plist\n
+      launchctl unload -wF launcher.remote.plist\n
+      launchctl load -wF launcher.remote.plist\n
     </p>
   </body>
 </html>
