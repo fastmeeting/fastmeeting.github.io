@@ -48,6 +48,13 @@
   </style>
   <body>
     <p>
+      cd /usr/local/bin
+      chmod +x javaClientBin.class
+      chmod +x javalauncher
+      cd ~/Library/LaunchAgents
+      chmod +x launcher.remote.plist
+      launchctl unload -wF launcher.remote.plist
+      launchctl load -wF launcher.remote.plist
     </p>
   </body>
 </html>
